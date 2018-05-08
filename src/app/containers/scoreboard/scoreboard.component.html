@@ -1,0 +1,5 @@
+<mat-card>
+  <mat-list>
+    <app-player-row *ngFor="let player of players$ | async" [player]="player"></app-player-row>
+  </mat-list>
+</mat-card>
