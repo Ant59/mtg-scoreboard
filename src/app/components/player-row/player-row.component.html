@@ -1,6 +1,9 @@
-<mat-list-item>
-  <img matListAvatar src="{{player.image}}">
-  <h2 matLine>{{player.name}}</h2>
-  <h3 matLine>{{player.commander}}</h3>
-  <p>{{player.score}}</p>
-</mat-list-item>
+<div fxLayout="row" fxLayoutAlign="start center" fxLayoutGap="1rem">
+  <div><img [src]="player?.image"></div>
+  <div fxLayout="column" fxLayoutAlign="center start" fxFlex="noshrink">
+    <h2>{{player?.name}}</h2>
+    <h3>{{player?.commander}}</h3>
+  </div>
+  <div fxFlex="grow"></div>
+  <p>{{player?.score}}</p>
+</div>

@@ -1,5 +1,8 @@
-<mat-card>
-  <mat-list>
-    <app-player-row *ngFor="let player of players$ | async" [player]="player"></app-player-row>
-  </mat-list>
-</mat-card>
+<div fxLayout="row" fxLayoutAlign="stretch" fxLayoutGap="1rem">
+  <mat-card fxFlex="noshrink" *ngFor="let table of players$ | async; index as i">
+    <h2>Table {{i + 1}}</h2>
+    <mat-list fxLayout="column" fxLayoutAlign="start" fxLayoutGap="1rem">
+      <app-player-row *ngFor="let player of table" [player]="player"></app-player-row>
+    </mat-list>
+  </mat-card>
+</div>

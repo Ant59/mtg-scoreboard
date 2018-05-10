@@ -6,7 +6,7 @@ const MTG_COLOURS = {
   'Black': '#CBC2BF',
   'Red': '#F9AA8F',
   'Green': '#9BD3AE',
-}
+};
 
 @Component({
   selector: 'app-player-row',
@@ -17,5 +17,4 @@ const MTG_COLOURS = {
 export class PlayerRowComponent {
 
   @Input() player;
-
 }

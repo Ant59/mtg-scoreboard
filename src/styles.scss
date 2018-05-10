@@ -1,5 +1,5 @@
 /* You can add global styles to this file, and also import other style files */
-@import '~@angular/material/prebuilt-themes/indigo-pink.css';
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
 @import url('https://fonts.googleapis.com/icon?family=Material+Icons');
 
 @font-face { font-family: 'Beleren'; src: url('./assets/Beleren-Bold.ttf'); }
@@ -8,4 +8,10 @@ h1 {
   font-family: 'Beleren';
   font-weight: bold;
   text-transform: uppercase;
+}
+
+body {
+  background-image: url(https://magic.wizards.com/sites/mtg/files/images/wallpaper/Island_BFZ_2560x1600_Wallpaper.jpg);
+  background-size: cover;
+  background-attachment: fixed;
 }
